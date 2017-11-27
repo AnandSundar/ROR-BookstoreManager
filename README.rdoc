@@ -1,8 +1,8 @@
 First things first
 
-Please run the following commands in linux terminal to install ROR and it's dependencies
+Please run the following commands in linux (Ubuntu) terminal to install ROR and it's dependencies
 
-sudo apt-get updated
+sudo apt-get update
 
 sudo apt-get install curl
 
