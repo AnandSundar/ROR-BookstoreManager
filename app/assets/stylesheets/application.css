@@ -28,7 +28,7 @@ header {
   height: 80px;
   margin-bottom: 20px;
   padding-top: 15px;
-  margin-top: -15px;
+  margin-top: -30px;
 }
 
 footer {
@@ -42,13 +42,13 @@ footer {
 
 #books-index img {
   width: 100%;
-  max-height: 100px
   padding: 3px;
   border: 1px #ccc solid;
 }
 
 #books-index h3 {
   height: 50px;
+  margin-bottom: 20px;
 }
 
 #books-index {
@@ -58,6 +58,10 @@ footer {
 #books-index .btn {
   display: block;
   margin-top: 20px;
+}
+
+.books-show-left img {
+  max-width: 250px;
 }
 
 #books-show h2 {
@@ -84,4 +88,12 @@ footer {
 .clearfix {
   float: left;
   margin-top: 10px;
+}
+
+.mr-auto {
+  margin-left: 50px;
+}
+
+.navbar-right {
+  margin-right: 50px;
 }

@@ -1,23 +1,26 @@
 <div id="books-show">
-  <h2> Ruby On Rails </h2>
+  <h2><%= @book.title %></h2>
   <div class="books-show-left">
-    <%= image_tag('cover/ruby_on_rails.png') %>
+    <%= image_tag(@book.coverpath) %>
   </div>
   <div class="books-show-right">
     <h3>Book info:</h3>
     <ul>
-      <li><strong>Category:</strong> Ruby On Rails</li>
-      <li><strong>Author:</strong> Michael Hart</li>
-      <li><strong>Publisher:</strong> Technology print</li>
-      <li><strong>Year:</strong> 2017</li>
-      <li><strong>ISBN:</strong> 123456789</li>
-      <li><strong>Format:</strong> Paperback</li>
-      <li><strong>Pages:</strong> 200</li>
+      <li><strong>Category:</strong> </li>
+      <li><strong>Author:</strong> <%= @book.author.first_name %> <%= @book.author.last_name %></li>
+      <li><strong>Publisher:</strong> <%= @book.publisher.name %></li>
+      <li><strong>Year:</strong> <%= @book.year %></li>
+      <li><strong>ISBN:</strong> <%= @book.isbn %></li>
+      <li><strong>Format:</strong> <%= @book.format %></li>
+      <li><strong>Pages:</strong> <%= @book.pages %></li>
     </ul>
-    <%= link_to "Buy For $10.00", "https://www.google.ca", class: "btn btn-success", target: "_blank" %>
+    <%= link_to "Buy For " + @book.price, @book.buy, class: "btn btn-success", target: "_blank" %>
   </div>
   <div class="clearfix">
     <h4>Excert</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p><%= @book.excerpt %></p>
+
+    <h3> Admin Functions </h3>
+      <%= link_to "Edit Book", edit_book_path(@book.id) %> | <%= link_to "Delete Book", book_path(@book), method: :delete, data: {confirm: "Are you sure?"} %>
   </div>
 </div>
