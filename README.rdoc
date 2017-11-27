@@ -1,28 +1,25 @@
-== README
+First things first
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Please run the following commands in linux terminal to install ROR and it's dependencies
 
-Things you may want to cover:
+sudo apt-get updated
 
-* Ruby version
+sudo apt-get install curl
 
-* System dependencies
+\curl -L https://get.rvm.io | bash -s stable
 
-* Configuration
+Now close the terminal and open a new one and run the following commands
 
-* Database creation
+source ~/.rvm/scripts/rvm
 
-* Database initialization
+rvm requirements
 
-* How to run the test suite
+rvm install ruby
 
-* Services (job queues, cache servers, search engines, etc.)
+rvm use ruby --default
 
-* Deployment instructions
+rvm rubygems current
 
-* ...
+sudo gem install rails
 
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+And you are done. 'ruby -v' and 'rails -v' will give you the version number
