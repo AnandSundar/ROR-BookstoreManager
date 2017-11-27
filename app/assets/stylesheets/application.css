@@ -27,9 +27,8 @@ header {
   color: #fff;
   height: 80px;
   margin-bottom: 20px;
-  padding-top: 10px;
+  padding-top: 15px;
   margin-top: -15px;
-
 }
 
 footer {
@@ -39,5 +38,50 @@ footer {
   margin-top: 20px;
   padding-top: 20px;
   text-align: center;
+}
 
+#books-index img {
+  width: 100%;
+  max-height: 100px
+  padding: 3px;
+  border: 1px #ccc solid;
+}
+
+#books-index h3 {
+  height: 50px;
+}
+
+#books-index {
+  text-align: center;
+}
+
+#books-index .btn {
+  display: block;
+  margin-top: 20px;
+}
+
+#books-show h2 {
+  background: #f4f4f4;
+  padding: 10px;
+}
+
+.books-show-left {
+  float: left;
+  width: 40%;
+}
+
+.books-show-right {
+  float: left;
+  width: 60%;
+  margin-top: 10px;
+  padding-left: 25px;
+}
+
+#books-show .btn {
+  margin: 20px 0 0 70px;
+}
+
+.clearfix {
+  float: left;
+  margin-top: 10px;
 }

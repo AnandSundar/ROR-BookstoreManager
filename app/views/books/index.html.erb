@@ -1,2 +1,46 @@
-<h1>Books#index</h1>
-<p>Find me in app/views/books/index.html.erb</p>
+<div id="books-index">
+  <div class="row">
+    <div class="col-md-3 col-sm-3">
+      <h3>ROR</h3>
+      <%= image_tag('cover/ruby_on_rails.png') %>
+      <%= link_to "Read More", book_path(1), class: "btn btn-primary"%>
+    </div>
+    <div class="col-md-3 col-sm-3">
+      <h3>Android</h3>
+      <%= image_tag('cover/android.jpg') %>
+      <%= link_to "Read More", book_path(1), class: "btn btn-primary"%>
+    </div>
+    <div class="col-md-3 col-sm-3">
+      <h3>C++</h3>
+      <%= image_tag('cover/cpp.jpg') %>
+      <%= link_to "Read More", book_path(1), class: "btn btn-primary"%>
+    </div>
+    <div class="col-md-3 col-sm-3">
+      <h3>C#</h3>
+      <%= image_tag('cover/csharp.jpg') %>
+      <%= link_to "Read More", book_path(1), class: "btn btn-primary"%>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3 col-sm-3">
+      <h3>Python</h3>
+      <%= image_tag('cover/python.jpg') %>
+      <%= link_to "Read More", book_path(1), class: "btn btn-primary"%>
+    </div>
+    <div class="col-md-3 col-sm-3">
+      <h3>Xcode</h3>
+      <%= image_tag('cover/xcode.jpg') %>
+      <%= link_to "Read More", book_path(1), class: "btn btn-primary"%>
+    </div>
+    <div class="col-md-3 col-sm-3">
+      <h3>PHP</h3>
+      <%= image_tag('cover/php.png') %>
+      <%= link_to "Read More", book_path(1), class: "btn btn-primary"%>
+    </div>
+    <div class="col-md-3 col-sm-3">
+      <h3>R</h3>
+      <%= image_tag('cover/r.jpg') %>
+      <%= link_to "Read More", book_path(1), class: "btn btn-primary"%>
+    </div>
+  </div>
+</div>
